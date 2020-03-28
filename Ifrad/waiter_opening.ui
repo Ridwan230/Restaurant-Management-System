@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Manager_opening</class>
- <widget class="QDialog" name="Manager_opening">
+ <class>waiter_opening</class>
+ <widget class="QDialog" name="waiter_opening">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>679</width>
-    <height>427</height>
+    <width>692</width>
+    <height>435</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,17 +16,17 @@
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>330</x>
+     <x>340</x>
      <y>100</y>
-     <width>321</width>
-     <height>251</height>
+     <width>341</width>
+     <height>261</height>
     </rect>
    </property>
    <property name="title">
-    <string>Manager SignIn</string>
+    <string>Waiter Signin</string>
    </property>
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout">
@@ -38,7 +38,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="Manager_username_lineEdit"/>
+         <widget class="QLineEdit" name="Waiter_username_lineEdit"/>
         </item>
        </layout>
       </item>
@@ -52,7 +52,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="Manager_pass_lineEdit">
+         <widget class="QLineEdit" name="Waiter_pass_lineEdit">
           <property name="echoMode">
            <enum>QLineEdit::Password</enum>
           </property>
@@ -62,8 +62,8 @@
       </item>
      </layout>
     </item>
-    <item row="1" column="0">
-     <widget class="QPushButton" name="Managerlogin_pushButton">
+    <item>
+     <widget class="QPushButton" name="Waiter_login_pushbutton">
       <property name="text">
        <string>SignIn</string>
       </property>
@@ -75,8 +75,8 @@
    <property name="geometry">
     <rect>
      <x>50</x>
-     <y>110</y>
-     <width>261</width>
+     <y>120</y>
+     <width>271</width>
      <height>231</height>
     </rect>
    </property>

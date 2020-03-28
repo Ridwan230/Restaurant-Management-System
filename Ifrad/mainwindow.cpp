@@ -29,3 +29,19 @@ void MainWindow::on_Manager_PushButton_clicked()
     manager_opening->resize(800,500);
     manager_opening->show();
 }
+
+void MainWindow::on_Waiter_PushButton_clicked()
+{
+    hide();
+    waiter_open= new waiter_opening(this);
+    waiter_open->resize(800,500);
+    waiter_open->show();
+}
+
+void MainWindow::on_Chef_PushButton_clicked()
+{
+    hide();
+    chef_open= new chef_opening(this);
+    chef_open->resize(800,500);
+    chef_open->show();
+}

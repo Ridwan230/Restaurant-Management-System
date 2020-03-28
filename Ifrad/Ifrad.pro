@@ -16,20 +16,26 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    chef_opening.cpp \
     customer.cpp \
     main.cpp \
     mainwindow.cpp \
-    manager_opening.cpp
+    manager_opening.cpp \
+    waiter_opening.cpp
 
 HEADERS += \
+    chef_opening.h \
     customer.h \
     mainwindow.h \
-    manager_opening.h
+    manager_opening.h \
+    waiter_opening.h
 
 FORMS += \
+    chef_opening.ui \
     customer.ui \
     mainwindow.ui \
-    manager_opening.ui
+    manager_opening.ui \
+    waiter_opening.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
