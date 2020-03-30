@@ -21,6 +21,7 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     manager_opening.cpp \
+    manager_second.cpp \
     waiter_opening.cpp
 
 HEADERS += \
@@ -28,6 +29,7 @@ HEADERS += \
     customer.h \
     mainwindow.h \
     manager_opening.h \
+    manager_second.h \
     waiter_opening.h
 
 FORMS += \
@@ -35,6 +37,7 @@ FORMS += \
     customer.ui \
     mainwindow.ui \
     manager_opening.ui \
+    manager_second.ui \
     waiter_opening.ui
 
 # Default rules for deployment.
