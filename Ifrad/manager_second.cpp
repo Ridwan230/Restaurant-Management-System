@@ -12,3 +12,8 @@ manager_second::~manager_second()
 {
     delete ui;
 }
+
+void manager_second::on_commandLinkButton_clicked()
+{
+
+}
