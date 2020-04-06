@@ -1,22 +1,11 @@
 #ifndef CUSTOMER_H
 #define CUSTOMER_H
 
-#include <QDialog>
 
-namespace Ui {
-class Customer;
-}
-
-class Customer : public QDialog
+class Customer
 {
-    Q_OBJECT
-
 public:
-    explicit Customer(QWidget *parent = nullptr);
-    ~Customer();
-
-private:
-    Ui::Customer *ui;
+    Customer();
 };
 
 #endif // CUSTOMER_H
