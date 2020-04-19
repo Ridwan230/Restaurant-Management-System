@@ -16,6 +16,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    add_chef.cpp \
+    add_waiter.cpp \
     chef_info.cpp \
     chef_opening.cpp \
     customer.cpp \
@@ -23,6 +25,7 @@ SOURCES += \
     global.cpp \
     main.cpp \
     mainwindow.cpp \
+    man_employee.cpp \
     manager_info.cpp \
     manager_opening.cpp \
     manager_second.cpp \
@@ -32,12 +35,15 @@ SOURCES += \
     waiter_opening.cpp
 
 HEADERS += \
+    add_chef.h \
+    add_waiter.h \
     chef_info.h \
     chef_opening.h \
     customer.h \
     customer_info.h \
     global.h \
     mainwindow.h \
+    man_employee.h \
     manager_info.h \
     manager_opening.h \
     manager_second.h \
@@ -47,9 +53,12 @@ HEADERS += \
     waiter_opening.h
 
 FORMS += \
+    add_chef.ui \
+    add_waiter.ui \
     chef_opening.ui \
     customer.ui \
     mainwindow.ui \
+    man_employee.ui \
     manager_opening.ui \
     manager_second.ui \
     waiter_opening.ui

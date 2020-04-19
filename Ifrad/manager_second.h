@@ -1,6 +1,8 @@
 #ifndef MANAGER_SECOND_H
 #define MANAGER_SECOND_H
 
+#include"man_employee.h"
+
 #include <QDialog>
 
 namespace Ui {
@@ -19,8 +21,11 @@ private slots:
 
     void on_commandLinkButton_clicked();
 
+    void on_Manager_emp_clicked();
+
 private:
     Ui::manager_second *ui;
+    Man_Employee *manemployee;
 };
 
 #endif // MANAGER_SECOND_H

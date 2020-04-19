@@ -29,7 +29,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QCommandLinkButton" name="commandLinkButton">
+      <widget class="QCommandLinkButton" name="Manager_chg_pass">
        <property name="text">
         <string>Change Password</string>
        </property>
@@ -56,7 +56,7 @@
     </layout>
    </item>
    <item>
-    <widget class="QPushButton" name="pushButton_3">
+    <widget class="QPushButton" name="Manager_menu">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
        <horstretch>0</horstretch>
@@ -69,7 +69,7 @@
     </widget>
    </item>
    <item>
-    <widget class="QPushButton" name="pushButton_4">
+    <widget class="QPushButton" name="Manager_emp">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
        <horstretch>0</horstretch>
@@ -82,7 +82,7 @@
     </widget>
    </item>
    <item>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="Manager_cus">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
        <horstretch>0</horstretch>
@@ -95,7 +95,7 @@
     </widget>
    </item>
    <item>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="Manager_finances">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
        <horstretch>0</horstretch>
@@ -108,7 +108,7 @@
     </widget>
    </item>
    <item>
-    <widget class="QPushButton" name="pushButton_5">
+    <widget class="QPushButton" name="Manager_reservation">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
        <horstretch>0</horstretch>

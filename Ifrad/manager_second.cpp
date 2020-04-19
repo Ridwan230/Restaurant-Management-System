@@ -17,3 +17,11 @@ void manager_second::on_commandLinkButton_clicked()
 {
 
 }
+
+void manager_second::on_Manager_emp_clicked()
+{
+    hide();
+    manemployee= new Man_Employee(this);
+    manemployee->resize(800,500);
+    manemployee->show();
+}
