@@ -15,6 +15,9 @@ public:
     explicit Add_chef(QWidget *parent = nullptr);
     ~Add_chef();
 
+private slots:
+    void on_Add_pushButton_clicked();
+
 private:
     Ui::Add_chef *ui;
 };

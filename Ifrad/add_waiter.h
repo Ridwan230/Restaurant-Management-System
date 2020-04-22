@@ -15,6 +15,9 @@ public:
     explicit add_waiter(QWidget *parent = nullptr);
     ~add_waiter();
 
+private slots:
+    void on_add_pushButton_clicked();
+
 private:
     Ui::add_waiter *ui;
 };

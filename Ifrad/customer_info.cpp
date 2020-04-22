@@ -1,9 +1,9 @@
 #include "customer_info.h"
-Customer_info::Customer_info(): People(0,"",0), password("")
+Customer_info::Customer_info(): People(0,"",0), password(""),number_of_order(0)
 {
 
 }
-Customer_info::Customer_info(int x, QString y, float z, QString s): People(x,y,z), password(s)
+Customer_info::Customer_info(int x, QString y, float z, QString s): People(x,y,z), password(s),number_of_order(0)
 {
 
 }
@@ -30,4 +30,22 @@ void Customer_info::setEmail(QString s)
 QString Customer_info::getEmail()
 {
     return Email;
+}
+void Customer_info::setOrder(int serial)
+{
+    ordered_items[number_of_order]=serial;
+    number_of_order++;
+}
+int* Customer_info::getOrder()
+{
+    static int temp_arr[10];
+    for(int i=0;i<10;i++)
+    {
+        temp_arr[i]=ordered_items[i];
+    }
+    return temp_arr;
+}
+int Customer_info::getNumber_of_order()
+{
+    return number_of_order;
 }
