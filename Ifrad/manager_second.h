@@ -23,6 +23,8 @@ private slots:
 
     void on_Manager_emp_clicked();
 
+    void on_back_pushButton_clicked();
+
 private:
     Ui::manager_second *ui;
     Man_Employee *manemployee;

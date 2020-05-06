@@ -1,5 +1,6 @@
 #include "waiter_opening.h"
 #include "ui_waiter_opening.h"
+#include "mainwindow.h"
 
 #include<QPixmap>
 
@@ -17,4 +18,13 @@ waiter_opening::waiter_opening(QWidget *parent) :
 waiter_opening::~waiter_opening()
 {
     delete ui;
+}
+
+MainWindow *m3;
+
+void waiter_opening::on_bcak_pushButton_clicked()
+{
+    hide();
+    m3=new MainWindow(this);
+    m3->show();
 }

@@ -15,6 +15,9 @@ public:
     explicit chef_opening(QWidget *parent = nullptr);
     ~chef_opening();
 
+private slots:
+    void on_back_pushButton_clicked();
+
 private:
     Ui::chef_opening *ui;
 };

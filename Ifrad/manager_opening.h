@@ -20,6 +20,8 @@ public:
 private slots:
     void on_Managerlogin_pushButton_clicked();
 
+    void on_back_pushButton_clicked();
+
 private:
     Ui::Manager_opening *ui;
     manager_second *manager_second_open;

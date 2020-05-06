@@ -120,6 +120,13 @@
      </property>
     </widget>
    </item>
+   <item>
+    <widget class="QPushButton" name="back_pushButton">
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+   </item>
   </layout>
  </widget>
  <resources/>

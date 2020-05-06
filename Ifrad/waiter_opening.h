@@ -15,6 +15,9 @@ public:
     explicit waiter_opening(QWidget *parent = nullptr);
     ~waiter_opening();
 
+private slots:
+    void on_bcak_pushButton_clicked();
+
 private:
     Ui::waiter_opening *ui;
 };

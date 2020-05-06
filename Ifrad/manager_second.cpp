@@ -1,5 +1,6 @@
 #include "manager_second.h"
 #include "ui_manager_second.h"
+#include "manager_opening.h"
 
 manager_second::manager_second(QWidget *parent) :
     QDialog(parent),
@@ -24,4 +25,13 @@ void manager_second::on_Manager_emp_clicked()
     manemployee= new Man_Employee(this);
     manemployee->resize(800,500);
     manemployee->show();
+}
+
+Manager_opening *m6;
+
+void manager_second::on_back_pushButton_clicked()
+{
+    hide();
+    m6=new Manager_opening(this);
+    m6->show();
 }

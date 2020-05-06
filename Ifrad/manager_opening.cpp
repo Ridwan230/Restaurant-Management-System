@@ -1,5 +1,6 @@
 #include "manager_opening.h"
 #include "ui_manager_opening.h"
+#include "mainwindow.h"
 
 #include<QPixmap>
 #include<QMessageBox>
@@ -39,4 +40,13 @@ void Manager_opening::on_Managerlogin_pushButton_clicked()
     {
         QMessageBox::warning(this,"Login","Incorrect Username or Password. Please Try Again");
     }
+}
+
+MainWindow *m5;
+
+void Manager_opening::on_back_pushButton_clicked()
+{
+    hide();
+    m5=new MainWindow(this);
+    m5->show();
 }

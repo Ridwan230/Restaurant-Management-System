@@ -18,6 +18,8 @@ public:
 private slots:
     void on_Cus_nameline_returnPressed();
 
+    void on_back_pushButton_clicked();
+
 private:
     Ui::Customer *ui;
 };

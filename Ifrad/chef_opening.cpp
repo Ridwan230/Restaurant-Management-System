@@ -1,5 +1,6 @@
 #include "chef_opening.h"
 #include "ui_chef_opening.h"
+#include "mainwindow.h"
 
 #include<QPixmap>
 
@@ -17,4 +18,13 @@ chef_opening::chef_opening(QWidget *parent) :
 chef_opening::~chef_opening()
 {
     delete ui;
+}
+
+MainWindow *m4;
+
+void chef_opening::on_back_pushButton_clicked()
+{
+    hide();
+    m4=new MainWindow(this);
+    m4->show();
 }
