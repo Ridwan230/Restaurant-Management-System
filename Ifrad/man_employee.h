@@ -23,6 +23,8 @@ private slots:
 
     void on_add_waiter_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::Man_Employee *ui;
     Add_chef *addchef;

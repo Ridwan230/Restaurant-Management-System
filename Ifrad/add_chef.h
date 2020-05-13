@@ -18,6 +18,8 @@ public:
 private slots:
     void on_Add_pushButton_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::Add_chef *ui;
 };

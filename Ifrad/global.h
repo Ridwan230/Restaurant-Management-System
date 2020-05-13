@@ -2,8 +2,10 @@
 #define GLOBAL_H
 #include "chef_info.h"
 #include "waiter_info.h"
+#include"customer_info.h"
 #define MAX_CHEF 10
 #define MAX_WAITER 10
+#define MAX_CUSTOMER 100
 
 class Global
 {
@@ -21,6 +23,7 @@ extern int total_waiter;
 extern int total_menu_item;
 extern Chef_info chef[MAX_CHEF];
 extern Waiter_info waiter[MAX_WAITER];
+extern Customer_info customer[MAX_CUSTOMER];
 
 
 #endif // GLOBAL_H

@@ -18,6 +18,8 @@ public:
 private slots:
     void on_add_pushButton_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::add_waiter *ui;
 };

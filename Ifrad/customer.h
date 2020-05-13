@@ -20,6 +20,8 @@ private slots:
 
     void on_back_pushButton_clicked();
 
+    void on_Menu_PushButton_clicked();
+
 private:
     Ui::Customer *ui;
 };

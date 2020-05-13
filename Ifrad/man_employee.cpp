@@ -1,5 +1,8 @@
 #include "man_employee.h"
 #include "ui_man_employee.h"
+#include"manager_second.h"
+
+manager_second *man_second;
 
 Man_Employee::Man_Employee(QWidget *parent) :
     QDialog(parent),
@@ -27,4 +30,13 @@ void Man_Employee::on_add_waiter_clicked()
     addwaiter= new add_waiter(this);
     addwaiter->resize(800,500);
     addwaiter->show();
+}
+
+void Man_Employee::on_pushButton_clicked()
+{
+    hide();
+    man_second= new manager_second(this);
+    man_second->resize(800,500);
+    man_second->show();
+
 }

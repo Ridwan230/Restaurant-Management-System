@@ -2,7 +2,6 @@
 #define MANAGER_SECOND_H
 
 #include"man_employee.h"
-
 #include <QDialog>
 
 namespace Ui {

@@ -1,6 +1,8 @@
 #include "chef_opening.h"
 #include "ui_chef_opening.h"
 #include "mainwindow.h"
+#include"global.h"
+#include"QMessageBox"
 
 #include<QPixmap>
 
@@ -27,4 +29,27 @@ void chef_opening::on_back_pushButton_clicked()
     hide();
     m4=new MainWindow(this);
     m4->show();
+}
+
+
+void chef_opening::on_Chef_singIn_pushButton_clicked()
+{
+    int i,flag=0;
+    for(i=0;i<total_chef;i++)
+    {
+        if(chef[i].getName()==ui->Chef_username_lineEdit->text() && chef[i].getPassword()==ui->Chef_pass_lineEdit->text())
+        {
+            flag=1;
+            break;
+        }
+    }
+    if(flag==0)
+    {
+        QMessageBox::warning(this,"Login","Incorrect Username or Password. Please Try Again");
+    }
+    else
+    {
+        QMessageBox::information(this,"Login","Sign in Successful");
+    }
+
 }

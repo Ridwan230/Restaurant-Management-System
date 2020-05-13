@@ -18,6 +18,8 @@ public:
 private slots:
     void on_bcak_pushButton_clicked();
 
+    void on_Waiter_login_pushbutton_clicked();
+
 private:
     Ui::waiter_opening *ui;
 };

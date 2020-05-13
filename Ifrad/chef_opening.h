@@ -18,6 +18,8 @@ public:
 private slots:
     void on_back_pushButton_clicked();
 
+    void on_Chef_singIn_pushButton_clicked();
+
 private:
     Ui::chef_opening *ui;
 };

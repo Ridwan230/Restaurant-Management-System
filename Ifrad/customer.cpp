@@ -28,3 +28,25 @@ void Customer::on_back_pushButton_clicked()
     m1=new MainWindow(this);
     m1->show();
 }
+
+void Customer::on_Menu_PushButton_clicked()
+{
+    int i,flag=0;
+        for(i=0;i<total_customer;i++)
+        {
+            if(customer[i].getName()==ui->Cus_nameline->text())
+            {
+                flag=1;
+            }
+        }
+        if(flag==0)
+        {
+            customer[total_customer].setName(ui->Cus_nameline->text());
+            customer[total_customer].setEmail(ui->lineEdit_3->text());
+            customer[total_customer].setPhone_number(ui->Cus_phoneline->text());
+            total_customer++;
+            ui->Cus_nameline->clear();
+            ui->lineEdit_3->clear();
+            ui->Cus_phoneline->clear();
+        }
+}
