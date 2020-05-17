@@ -31,7 +31,9 @@ void Customer::on_back_pushButton_clicked()
 
 void Customer::on_Menu_PushButton_clicked()
 {
-    int i,flag=0;
+
+    //OPERATIONS FOR MENU CLASS   (Ridwan add korse)
+        int i,flag=0;
         for(i=0;i<total_customer;i++)
         {
             if(customer[i].getName()==ui->Cus_nameline->text())
@@ -49,4 +51,11 @@ void Customer::on_Menu_PushButton_clicked()
             ui->lineEdit_3->clear();
             ui->Cus_phoneline->clear();
         }
+
+
+     //OPERATIONS FOR CUSTOMER_MENU CLASS    (Ifrad add korse)
+        hide();
+        cus_menu= new menu_customer(this);
+        cus_menu->resize(800,500);
+        cus_menu->show();
 }

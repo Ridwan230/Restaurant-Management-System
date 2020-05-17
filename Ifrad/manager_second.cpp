@@ -35,3 +35,8 @@ void manager_second::on_back_pushButton_clicked()
     m6=new Manager_opening(this);
     m6->show();
 }
+
+void manager_second::on_Manager_chg_pass_clicked()
+{
+
+}

@@ -16,7 +16,7 @@ public:
     ~waiter_opening();
 
 private slots:
-    void on_bcak_pushButton_clicked();
+    void on_back_pushButton_clicked();
 
     void on_Waiter_login_pushbutton_clicked();
 

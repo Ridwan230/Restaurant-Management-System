@@ -25,7 +25,7 @@ waiter_opening::~waiter_opening()
 
 MainWindow *m3;
 
-void waiter_opening::on_bcak_pushButton_clicked()
+void waiter_opening::on_back_pushButton_clicked()
 {
     hide();
     m3=new MainWindow(this);

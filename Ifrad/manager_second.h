@@ -24,6 +24,8 @@ private slots:
 
     void on_back_pushButton_clicked();
 
+    void on_Manager_chg_pass_clicked();
+
 private:
     Ui::manager_second *ui;
     Man_Employee *manemployee;

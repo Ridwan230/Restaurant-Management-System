@@ -30,6 +30,7 @@ SOURCES += \
     manager_opening.cpp \
     manager_second.cpp \
     menu.cpp \
+    menu_customer.cpp \
     people.cpp \
     waiter_info.cpp \
     waiter_opening.cpp
@@ -48,6 +49,7 @@ HEADERS += \
     manager_opening.h \
     manager_second.h \
     menu.h \
+    menu_customer.h \
     people.h \
     waiter_info.h \
     waiter_opening.h
@@ -61,6 +63,7 @@ FORMS += \
     man_employee.ui \
     manager_opening.ui \
     manager_second.ui \
+    menu_customer.ui \
     waiter_opening.ui
 
 # Default rules for deployment.
@@ -69,4 +72,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 RESOURCES += \
+    food_img.qrc \
     login_img.qrc

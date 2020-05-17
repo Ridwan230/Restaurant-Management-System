@@ -3,6 +3,8 @@
 
 #include <QDialog>
 
+#include "menu_customer.h"
+
 namespace Ui {
 class Customer;
 }
@@ -24,6 +26,7 @@ private slots:
 
 private:
     Ui::Customer *ui;
+    menu_customer *cus_menu;
 };
 
 #endif // CUSTOMER_H

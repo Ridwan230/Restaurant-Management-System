@@ -28,13 +28,6 @@
        </property>
       </widget>
      </item>
-     <item>
-      <widget class="QCommandLinkButton" name="Manager_chg_pass">
-       <property name="text">
-        <string>Change Password</string>
-       </property>
-      </widget>
-     </item>
     </layout>
    </item>
    <item>
