@@ -17,6 +17,7 @@ public:
 //Oikhane initialize korar por onno kono file e global.h include korlei oi variable ba object ke shob file access korte parbe
 //Same can be done for objects
 
+//      (Ridwan add korse)
 extern int total_customer;
 extern int total_chef;
 extern int total_waiter;
@@ -24,6 +25,14 @@ extern int total_menu_item;
 extern Chef_info chef[MAX_CHEF];
 extern Waiter_info waiter[MAX_WAITER];
 extern Customer_info customer[MAX_CUSTOMER];
+
+
+
+//      (Ifrad add korse)
+extern int quantity_burger;
+extern int quantity_fries;
+extern int quantity_drinks;
+extern int total_cost;
 
 
 #endif // GLOBAL_H
