@@ -22,9 +22,9 @@ extern int total_customer;
 extern int total_chef;
 extern int total_waiter;
 extern int total_menu_item;
-extern Chef_info chef[MAX_CHEF];
-extern Waiter_info waiter[MAX_WAITER];
-extern Customer_info customer[MAX_CUSTOMER];
+extern Chef_info* chef[MAX_CHEF];
+extern Waiter_info* waiter[MAX_WAITER];
+extern Customer_info* customer[MAX_CUSTOMER];
 
 
 

@@ -37,7 +37,7 @@ void chef_opening::on_Chef_singIn_pushButton_clicked()
     int i,flag=0;
     for(i=0;i<total_chef;i++)
     {
-        if(chef[i].getName()==ui->Chef_username_lineEdit->text() && chef[i].getPassword()==ui->Chef_pass_lineEdit->text())
+        if(chef[i]->getName()==ui->Chef_username_lineEdit->text() && chef[i]->getPassword()==ui->Chef_pass_lineEdit->text())
         {
             flag=1;
             break;

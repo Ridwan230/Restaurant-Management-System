@@ -19,9 +19,10 @@ Add_chef::~Add_chef()
 
 void Add_chef::on_Add_pushButton_clicked()
 {
-    chef[total_chef].setID(ui->chef_id_lineEdit->text().toInt());
-    chef[total_chef].setPassword(ui->lineEdit_password->text());
-    chef[total_chef].setName(ui->Chef_name_lineEdit->text());
+    chef[total_chef]=new Chef_info();
+    chef[total_chef]->setID(ui->chef_id_lineEdit->text().toInt());
+    chef[total_chef]->setPassword(ui->lineEdit_password->text());
+    chef[total_chef]->setName(ui->Chef_name_lineEdit->text());
     total_chef++;
     ui->chef_id_lineEdit->clear();
     ui->Chef_name_lineEdit->clear();

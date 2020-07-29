@@ -37,7 +37,7 @@ void waiter_opening::on_Waiter_login_pushbutton_clicked()
     int i,flag=0;
     for(i=0;i<total_waiter;i++)
     {
-        if(waiter[i].getName()==ui->Waiter_username_lineEdit->text() && waiter[i].getPassword()==ui->Waiter_pass_lineEdit->text())
+        if(waiter[i]->getName()==ui->Waiter_username_lineEdit->text() && waiter[i]->getPassword()==ui->Waiter_pass_lineEdit->text())
         {
             flag=1;
             break;

@@ -36,16 +36,17 @@ void Customer::on_Menu_PushButton_clicked()
         int i,flag=0;
         for(i=0;i<total_customer;i++)
         {
-            if(customer[i].getName()==ui->Cus_nameline->text())
+            if(customer[i]->getName()==ui->Cus_nameline->text())
             {
                 flag=1;
             }
         }
         if(flag==0)
         {
-            customer[total_customer].setName(ui->Cus_nameline->text());
-            customer[total_customer].setEmail(ui->lineEdit_3->text());
-            customer[total_customer].setPhone_number(ui->Cus_phoneline->text());
+            customer[total_customer]=new Customer_info();
+            customer[total_customer]->setName(ui->Cus_nameline->text());
+            customer[total_customer]->setEmail(ui->lineEdit_3->text());
+            customer[total_customer]->setPhone_number(ui->Cus_phoneline->text());
             total_customer++;
             ui->Cus_nameline->clear();
             ui->lineEdit_3->clear();
