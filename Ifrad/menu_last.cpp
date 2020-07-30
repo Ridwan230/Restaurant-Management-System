@@ -37,6 +37,7 @@ menu_last::~menu_last()
 MainWindow *m7;
 void menu_last::on_pushButton_clicked()   //confirm push_button
 {
+    quantity_burger=0, quantity_fries=0, quantity_drinks=0, total_cost=0;
     hide();
     m7=new MainWindow(this);
     m7->show();

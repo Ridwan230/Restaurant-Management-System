@@ -22,6 +22,7 @@ SOURCES += \
     chef_opening.cpp \
     customer.cpp \
     customer_info.cpp \
+    display_common.cpp \
     global.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -43,6 +44,7 @@ HEADERS += \
     chef_opening.h \
     customer.h \
     customer_info.h \
+    display_common.h \
     global.h \
     mainwindow.h \
     man_employee.h \
@@ -61,6 +63,7 @@ FORMS += \
     add_waiter.ui \
     chef_opening.ui \
     customer.ui \
+    display_common.ui \
     mainwindow.ui \
     man_employee.ui \
     manager_opening.ui \

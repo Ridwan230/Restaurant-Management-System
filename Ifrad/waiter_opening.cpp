@@ -2,7 +2,7 @@
 #include "ui_waiter_opening.h"
 #include "mainwindow.h"
 #include "global.h"
-
+#include "display_common.h"
 
 #include<QPixmap>
 #include<QMessageBox>
@@ -49,6 +49,9 @@ void waiter_opening::on_Waiter_login_pushbutton_clicked()
     }
     else
     {
-        QMessageBox::information(this,"Login","Sign in Successful");
+        hide();
+        dis=new display_common(this);
+        dis->resize(800,500);
+        dis->show();
     }
 }

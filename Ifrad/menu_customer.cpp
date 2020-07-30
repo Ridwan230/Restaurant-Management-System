@@ -1,5 +1,6 @@
 #include "menu_customer.h"
 #include "ui_menu_customer.h"
+#include "mainwindow.h"
 #include "customer.h"
 #include "global.h"
 #include<QPixmap>
@@ -78,12 +79,12 @@ void menu_customer::on_Drinks_quantity_neg_pushButton_clicked()
     ui->total_label_1->setNum(total_cost);
 }
 
-Customer *c1;
+MainWindow *m8;
 void menu_customer::on_Back_pushButton_clicked()
 {
     hide();
-    c1=new Customer(this);
-    c1->show();
+    m8=new MainWindow(this);
+    m8->show();
 }
 
 void menu_customer::on_Burger_img_pushButton_clicked()

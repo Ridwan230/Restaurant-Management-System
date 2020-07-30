@@ -1,6 +1,8 @@
 #include "man_employee.h"
 #include "ui_man_employee.h"
-#include"manager_second.h"
+#include "manager_second.h"
+#include "display_common.h"
+#include "global.h"
 
 manager_second *man_second;
 
@@ -39,4 +41,23 @@ void Man_Employee::on_pushButton_clicked()
     man_second->resize(800,500);
     man_second->show();
 
+}
+
+
+void Man_Employee::on_chef_status_clicked()
+{
+    temp=2;
+    hide();
+    dis=new display_common(this);
+    dis->resize(800,500);
+    dis->show();
+}
+
+void Man_Employee::on_waiter_status_clicked()
+{
+    temp=3;
+    hide();
+    dis=new display_common(this);
+    dis->resize(800,500);
+    dis->show();
 }

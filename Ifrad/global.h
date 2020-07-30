@@ -33,6 +33,7 @@ extern int quantity_burger;
 extern int quantity_fries;
 extern int quantity_drinks;
 extern int total_cost;
+extern int temp;
 
 
 #endif // GLOBAL_H

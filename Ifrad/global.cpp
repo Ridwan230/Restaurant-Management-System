@@ -21,3 +21,4 @@ int quantity_burger=0;
 int quantity_fries=0;
 int quantity_drinks=0;
 int total_cost=0;
+int temp=-1;

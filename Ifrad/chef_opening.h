@@ -1,6 +1,8 @@
 #ifndef CHEF_OPENING_H
 #define CHEF_OPENING_H
 
+#include "display_common.h"
+
 #include <QDialog>
 
 namespace Ui {
@@ -22,6 +24,7 @@ private slots:
 
 private:
     Ui::chef_opening *ui;
+    display_common *dis;
 };
 
 #endif // CHEF_OPENING_H

@@ -3,6 +3,7 @@
 
 #include"add_chef.h"
 #include"add_waiter.h"
+#include"display_common.h"
 
 #include <QDialog>
 
@@ -25,10 +26,15 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_chef_status_clicked();
+
+    void on_waiter_status_clicked();
+
 private:
     Ui::Man_Employee *ui;
     Add_chef *addchef;
     add_waiter *addwaiter;
+    display_common *dis;
 };
 
 #endif // MAN_EMPLOYEE_H

@@ -2,6 +2,8 @@
 #define MANAGER_SECOND_H
 
 #include"man_employee.h"
+#include "menu_customer.h"
+#include "display_common.h"
 #include <QDialog>
 
 namespace Ui {
@@ -26,9 +28,15 @@ private slots:
 
     void on_Manager_chg_pass_clicked();
 
+    void on_Manager_menu_clicked();
+
+    void on_Manager_cus_clicked();
+
 private:
     Ui::manager_second *ui;
     Man_Employee *manemployee;
+    menu_customer *cus_menu;
+    display_common *dis;
 };
 
 #endif // MANAGER_SECOND_H

@@ -1,8 +1,9 @@
 #include "chef_opening.h"
 #include "ui_chef_opening.h"
 #include "mainwindow.h"
-#include"global.h"
-#include"QMessageBox"
+#include "global.h"
+#include "QMessageBox"
+#include "display_common.h"
 
 #include<QPixmap>
 
@@ -49,7 +50,10 @@ void chef_opening::on_Chef_singIn_pushButton_clicked()
     }
     else
     {
-        QMessageBox::information(this,"Login","Sign in Successful");
+        hide();
+        dis=new display_common(this);
+        dis->resize(800,500);
+        dis->show();
     }
 
 }

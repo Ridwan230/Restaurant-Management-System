@@ -1,6 +1,8 @@
 #ifndef WAITER_OPENING_H
 #define WAITER_OPENING_H
 
+#include "display_common.h"
+
 #include <QDialog>
 
 namespace Ui {
@@ -22,6 +24,7 @@ private slots:
 
 private:
     Ui::waiter_opening *ui;
+    display_common *dis;
 };
 
 #endif // WAITER_OPENING_H
