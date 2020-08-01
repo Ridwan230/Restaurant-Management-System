@@ -23,10 +23,12 @@ void Add_chef::on_Add_pushButton_clicked()
     chef[total_chef]->setID(ui->chef_id_lineEdit->text().toInt());
     chef[total_chef]->setPassword(ui->lineEdit_password->text());
     chef[total_chef]->setName(ui->Chef_name_lineEdit->text());
+    chef[total_chef]->setSalary(ui->salary_lineedit->text().toInt());
     total_chef++;
     ui->chef_id_lineEdit->clear();
     ui->Chef_name_lineEdit->clear();
     ui->lineEdit_password->clear();
+    ui->salary_lineedit->clear();
 }
 
 void Add_chef::on_pushButton_clicked()

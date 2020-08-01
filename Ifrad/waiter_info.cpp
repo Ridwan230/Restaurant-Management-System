@@ -28,3 +28,23 @@ int Waiter_info::getTable_number()
 {
     return table_number;
 }
+QHash<QString,QString> Waiter_info::display()
+{
+    QHash<QString,QString> v;
+    v["name"]=name;
+    v["id"]=QString::number(id);
+    v["rating"]=QString::number(rating);
+    v["password"]=password;
+    v["table_number"]=QString::number(table_number);
+    v["salary"]=QString::number(salary);
+    return v;
+}
+
+void Waiter_info::setSalary(int n)
+{
+    salary=n;
+}
+int Waiter_info::getSalary()
+{
+    return salary;
+}

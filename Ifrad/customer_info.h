@@ -9,8 +9,8 @@ private:
     QString password;
     QString phone_number;
     QString Email;
-    int number_of_order;
-    int ordered_items[10];
+    int total_purchase;
+    QHash<QString,int> last_order;
 public:
     Customer_info();
     Customer_info(int x, QString y, float z, QString s);
@@ -20,10 +20,10 @@ public:
     QString getPhone_number();
     void setEmail(QString s);
     QString getEmail();
-    void setOrder(int serial);  //serial number of the item in menu
-    int* getOrder();           //returns an array that contains the items he ordered
-    int getNumber_of_order(); //returns the number of items ordered by the customer
-
+    QHash<QString,QString> display();
+    void new_purchase(int n);     //Keeps tract of total purchase by the customer
+    void update_last_order(QHash<QString,int> latest_order);     //keeps tract of the latest order of the customer so that can be used
+                                                                //when he visits the restaurant again.
 };
 
 #endif // CUSTOMER_INFO_H

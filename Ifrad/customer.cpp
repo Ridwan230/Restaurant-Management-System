@@ -38,6 +38,7 @@ void Customer::on_Menu_PushButton_clicked()
         {
             if(customer[i]->getName()==ui->Cus_nameline->text())
             {
+                current_customer=i;
                 flag=1;
             }
         }
@@ -47,6 +48,8 @@ void Customer::on_Menu_PushButton_clicked()
             customer[total_customer]->setName(ui->Cus_nameline->text());
             customer[total_customer]->setEmail(ui->lineEdit_3->text());
             customer[total_customer]->setPhone_number(ui->Cus_phoneline->text());
+            customer[total_customer]->setID(total_customer+1);
+            current_customer=i;
             total_customer++;
             ui->Cus_nameline->clear();
             ui->lineEdit_3->clear();

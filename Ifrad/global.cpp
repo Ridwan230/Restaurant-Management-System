@@ -13,6 +13,9 @@ int total_menu_item=0;
 Chef_info* chef[MAX_CHEF];
 Waiter_info* waiter[MAX_WAITER];
 Customer_info* customer[MAX_CUSTOMER];
+int daily_cost=0;
+QHash<QString,int> current_order;
+int current_customer;
 
 
 

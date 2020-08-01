@@ -24,11 +24,13 @@ void add_waiter::on_add_pushButton_clicked()
     waiter[total_waiter]->setID(ui->waiter_id_lineEdit->text().toInt());
     waiter[total_waiter]->setTable_number(ui->waiter_table_lineEdit->text().toInt());
     waiter[total_waiter]->setName(ui->waiter_name_lineEdit->text());
+    waiter[total_waiter]->setSalary(ui->lineEdit_salary->text().toInt());
     total_waiter++;
     ui->waiter_password->clear();
     ui->waiter_id_lineEdit->clear();
     ui->waiter_name_lineEdit->clear();
     ui->waiter_table_lineEdit->clear();
+    ui->lineEdit_salary->clear();
 }
 
 void add_waiter::on_pushButton_clicked()

@@ -1,9 +1,9 @@
 #include "customer_info.h"
-Customer_info::Customer_info(): People(0,"",0), password(""),number_of_order(0)
+Customer_info::Customer_info(): People(0,"",0), password(""),total_purchase(0)
 {
 
 }
-Customer_info::Customer_info(int x, QString y, float z, QString s): People(x,y,z), password(s),number_of_order(0)
+Customer_info::Customer_info(int x, QString y, float z, QString s): People(x,y,z), password(s), total_purchase(0)
 {
 
 }
@@ -31,21 +31,26 @@ QString Customer_info::getEmail()
 {
     return Email;
 }
-void Customer_info::setOrder(int serial)
+QHash<QString,QString> Customer_info::display()
 {
-    ordered_items[number_of_order]=serial;
-    number_of_order++;
+    QHash<QString,QString> v;
+    v["name"]=name;
+    v["id"]=QString::number(id);
+    v["rating"]=QString::number(rating);
+    v["password"]=password;
+    v["phone_number"]=phone_number;
+    v["Email"]=Email;
+    return v;
 }
-int* Customer_info::getOrder()
+
+void Customer_info::new_purchase(int n)
 {
-    static int temp_arr[10];
-    for(int i=0;i<10;i++)
-    {
-        temp_arr[i]=ordered_items[i];
-    }
-    return temp_arr;
+    total_purchase+=n;
 }
-int Customer_info::getNumber_of_order()
+void Customer_info::update_last_order(QHash<QString, int> latest_order)
 {
-    return number_of_order;
+    last_order["burgers"]=latest_order["burgers"];
+    last_order["fries"]=latest_order["fries"];
+    last_order["drinks"]=latest_order["drinks"];
 }
+
