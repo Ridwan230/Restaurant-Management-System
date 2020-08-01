@@ -40,6 +40,8 @@ QHash<QString,QString> Customer_info::display()
     v["password"]=password;
     v["phone_number"]=phone_number;
     v["Email"]=Email;
+    v["last_order"]=QString::number(last_order["burgers"])+" burgers, " + QString::number(last_order["fries"])+ " fries and " + QString::number(last_order["drinks"])+"drinks.";
+    v["total_purchase"]=QString::number(total_purchase);
     return v;
 }
 

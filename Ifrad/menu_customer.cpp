@@ -113,13 +113,7 @@ void menu_customer::on_Drinks_img_pushButton_clicked()
 
 void menu_customer::on_Confirm_pushButton_clicked()
 {
-    QHash<QString,int> q;
-    q["burgers"]=quantity_burger;
-    q["fries"]=quantity_fries;
-    q["drinks"]=quantity_drinks;
-    customer[current_customer]->update_last_order(q);
-    customer[current_customer]->new_purchase(total_cost);
-    daily_cost=daily_cost+total_cost;
+
     hide();
     menu_lst= new menu_last(this);
     menu_lst->resize(800,500);

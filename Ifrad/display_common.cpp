@@ -20,6 +20,8 @@ display_common::display_common(QWidget *parent) :
             ui->plainTextEdit->appendPlainText("ID: "+v["id"]);
             ui->plainTextEdit->appendPlainText("Phone Number: "+v["phone_number"]);
             ui->plainTextEdit->appendPlainText("Email: "+v["Email"]);
+            ui->plainTextEdit->appendPlainText("Last Order: "+v["last_order"]);
+            ui->plainTextEdit->appendPlainText("Total Purchase: "+v["total_purchase"]);
             ui->plainTextEdit->appendPlainText("\n");
 
         }

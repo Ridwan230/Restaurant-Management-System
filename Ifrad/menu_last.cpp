@@ -37,6 +37,13 @@ menu_last::~menu_last()
 MainWindow *m7;
 void menu_last::on_pushButton_clicked()   //confirm push_button
 {
+    QHash<QString,int> q;
+    q["burgers"]=quantity_burger;
+    q["fries"]=quantity_fries;
+    q["drinks"]=quantity_drinks;
+    customer[current_customer]->update_last_order(q);
+    customer[current_customer]->new_purchase(total_cost);
+    daily_cost=daily_cost+total_cost;
     quantity_burger=0, quantity_fries=0, quantity_drinks=0, total_cost=0;
     hide();
     m7=new MainWindow(this);
