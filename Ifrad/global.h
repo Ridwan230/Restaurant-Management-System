@@ -2,7 +2,7 @@
 #define GLOBAL_H
 #include "chef_info.h"
 #include "waiter_info.h"
-#include"customer_info.h"
+#include "customer_info.h"
 #define MAX_CHEF 10
 #define MAX_WAITER 10
 #define MAX_CUSTOMER 100
@@ -37,6 +37,11 @@ extern int quantity_fries;
 extern int quantity_drinks;
 extern int total_cost;
 extern int temp;
+extern int position;
+extern int total_burger;
+extern int total_fries;
+extern int total_drinks;
+extern int temp1;
 
 
 #endif // GLOBAL_H

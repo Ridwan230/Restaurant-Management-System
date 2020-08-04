@@ -57,6 +57,36 @@ display_common::display_common(QWidget *parent) :
 
         }
     }
+    else if(temp==4)
+    {
+        QHash<QString,QString> v;
+        People* ppl;
+        ppl=chef[position];
+        v=ppl->display();
+        ui->plainTextEdit->appendPlainText("Name: "+v["name"]);
+        ui->plainTextEdit->appendPlainText("ID: "+v["id"]);
+        ui->plainTextEdit->appendPlainText("Salary: "+v["salary"]);
+        ui->plainTextEdit->appendPlainText("\n");
+    }
+    else if(temp==5)
+    {
+        QHash<QString,QString> v;
+        People* ppl;
+        ppl=waiter[position];
+        v=ppl->display();
+        ui->plainTextEdit->appendPlainText("Name: "+v["name"]);
+        ui->plainTextEdit->appendPlainText("ID: "+v["id"]);
+        ui->plainTextEdit->appendPlainText("Table no: "+v["table_number"]);
+        ui->plainTextEdit->appendPlainText("Salary: "+v["salary"]);
+        ui->plainTextEdit->appendPlainText("\n");
+    }
+    else if(temp==6)
+    {
+        ui->plainTextEdit->appendPlainText("Total Amount Sold: "+QString::number(daily_cost));
+        ui->plainTextEdit->appendPlainText("Total Burgers Sold: "+QString::number(total_burger));
+        ui->plainTextEdit->appendPlainText("Total Fries Sold: "+QString::number(total_fries));
+        ui->plainTextEdit->appendPlainText("Total Drinks Sold: "+QString::number(total_drinks));
+    }
 }
 
 display_common::~display_common()

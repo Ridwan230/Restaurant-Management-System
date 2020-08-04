@@ -60,3 +60,12 @@ void manager_second::on_Manager_cus_clicked()
     dis->resize(800,500);
     dis->show();
 }
+
+void manager_second::on_Manager_finances_clicked()
+{
+    temp=6;
+    hide();
+    dis=new display_common(this);
+    dis->resize(800,500);
+    dis->show();
+}

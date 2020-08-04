@@ -3,13 +3,26 @@
 #include "mainwindow.h"
 #include "customer.h"
 #include "global.h"
-#include<QPixmap>
+#include <QPixmap>
 
 menu_customer::menu_customer(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::menu_customer)
 {
     ui->setupUi(this);
+    if(temp1==1)
+    {
+        QHash<QString,QString> v;
+        People* ppl;
+        ppl=customer[current_customer];
+        v=ppl->display();
+        ui->order_show->insertPlainText("\n");
+        ui->order_show->appendPlainText(v["last_order"]);
+    }
+    else
+    {
+        ui->order_show->insertPlainText("---");
+    }
 }
 
 menu_customer::~menu_customer()
@@ -113,7 +126,9 @@ void menu_customer::on_Drinks_img_pushButton_clicked()
 
 void menu_customer::on_Confirm_pushButton_clicked()
 {
-
+    total_burger=total_burger+quantity_burger;
+    total_fries=total_fries+quantity_fries;
+    total_drinks=total_drinks+quantity_drinks;
     hide();
     menu_lst= new menu_last(this);
     menu_lst->resize(800,500);

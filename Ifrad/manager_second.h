@@ -1,7 +1,7 @@
 #ifndef MANAGER_SECOND_H
 #define MANAGER_SECOND_H
 
-#include"man_employee.h"
+#include "man_employee.h"
 #include "menu_customer.h"
 #include "display_common.h"
 #include <QDialog>
@@ -31,6 +31,8 @@ private slots:
     void on_Manager_menu_clicked();
 
     void on_Manager_cus_clicked();
+
+    void on_Manager_finances_clicked();
 
 private:
     Ui::manager_second *ui;

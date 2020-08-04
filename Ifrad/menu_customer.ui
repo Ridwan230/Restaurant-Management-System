@@ -6,81 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>647</width>
-    <height>513</height>
+    <width>753</width>
+    <height>506</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="5" column="6">
-    <widget class="QLabel" name="label_12">
-     <property name="text">
-      <string>Total=</string>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="6" colspan="2">
-    <widget class="QPushButton" name="Burger_quantity_neg_pushButton">
-     <property name="text">
-      <string>-</string>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="0">
-    <layout class="QHBoxLayout" name="horizontalLayout_3">
-     <item>
-      <widget class="QPushButton" name="Drinks_img_pushButton">
-       <property name="text">
-        <string>IMAGE</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_7">
-       <property name="text">
-        <string>Drinks</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </item>
-   <item row="4" column="8">
-    <widget class="QLabel" name="Drinks_quantity_label">
-     <property name="text">
-      <string>      ---</string>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="5">
-    <widget class="QLabel" name="label_10">
-     <property name="text">
-      <string>200</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="5">
-    <widget class="QLabel" name="label_2">
-     <property name="text">
-      <string>PRICE</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="8">
-    <widget class="QLabel" name="label_3">
-     <property name="text">
-      <string>QUANTITY</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="0">
-    <widget class="QLabel" name="label">
-     <property name="text">
-      <string>                  ITEM</string>
-     </property>
-    </widget>
-   </item>
    <item row="2" column="1" rowspan="3">
     <spacer name="verticalSpacer">
      <property name="orientation">
@@ -94,6 +27,68 @@
      </property>
     </spacer>
    </item>
+   <item row="1" column="8">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>QUANTITY</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="6" colspan="2">
+    <widget class="QPushButton" name="Fries_quantity_neg_pushButton">
+     <property name="text">
+      <string>-</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3" rowspan="3">
+    <spacer name="verticalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="5">
+    <widget class="QLabel" name="label_10">
+     <property name="text">
+      <string>200</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>                  ITEM</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="9">
+    <widget class="QPushButton" name="Burger_quantity_pos_pushButton">
+     <property name="text">
+      <string>+</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="6" colspan="2">
+    <widget class="QPushButton" name="Burger_quantity_neg_pushButton">
+     <property name="text">
+      <string>-</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="9">
+    <widget class="QPushButton" name="Drinks_quantity_pos_pushButton">
+     <property name="text">
+      <string>+</string>
+     </property>
+    </widget>
+   </item>
    <item row="0" column="5">
     <widget class="QLabel" name="label_4">
      <property name="font">
@@ -106,10 +101,62 @@
      </property>
     </widget>
    </item>
+   <item row="7" column="6">
+    <widget class="QLabel" name="label_12">
+     <property name="text">
+      <string>Total=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="8">
+    <widget class="QLabel" name="Burger_quantity_label">
+     <property name="text">
+      <string>      ---</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="Burger_img_pushButton">
+       <property name="text">
+        <string>IMAGE</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Burger</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
    <item row="3" column="8">
     <widget class="QLabel" name="Fries_quantity_label">
      <property name="text">
       <string>      ---</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1" colspan="4">
+    <widget class="QLabel" name="label_11">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Last Order:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="6" colspan="2">
+    <widget class="QPushButton" name="Confirm_pushButton">
+     <property name="text">
+      <string>Confirm</string>
      </property>
     </widget>
    </item>
@@ -120,61 +167,6 @@
      </property>
     </widget>
    </item>
-   <item row="6" column="6" colspan="2">
-    <widget class="QPushButton" name="Confirm_pushButton">
-     <property name="text">
-      <string>Confirm</string>
-     </property>
-    </widget>
-   </item>
-   <item row="6" column="0">
-    <widget class="QPushButton" name="Back_pushButton">
-     <property name="text">
-      <string>Back</string>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="9">
-    <widget class="QPushButton" name="Burger_quantity_pos_pushButton">
-     <property name="text">
-      <string>+</string>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="2" rowspan="3">
-    <spacer name="verticalSpacer_2">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>40</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="4" column="9">
-    <widget class="QPushButton" name="Drinks_quantity_pos_pushButton">
-     <property name="text">
-      <string>+</string>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="7">
-    <widget class="QLabel" name="total_label_1">
-     <property name="text">
-      <string>---</string>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="6" colspan="2">
-    <widget class="QPushButton" name="Drinks_quantity_neg_pushButton">
-     <property name="text">
-      <string>-</string>
-     </property>
-    </widget>
-   </item>
    <item row="4" column="5">
     <widget class="QLabel" name="label_9">
      <property name="text">
@@ -182,8 +174,8 @@
      </property>
     </widget>
    </item>
-   <item row="2" column="4" rowspan="3">
-    <spacer name="verticalSpacer_4">
+   <item row="2" column="2" rowspan="3">
+    <spacer name="verticalSpacer_2">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
      </property>
@@ -213,15 +205,54 @@
      </item>
     </layout>
    </item>
-   <item row="3" column="6" colspan="2">
-    <widget class="QPushButton" name="Fries_quantity_neg_pushButton">
+   <item row="1" column="5">
+    <widget class="QLabel" name="label_2">
      <property name="text">
-      <string>-</string>
+      <string>PRICE</string>
      </property>
     </widget>
    </item>
-   <item row="2" column="3" rowspan="3">
-    <spacer name="verticalSpacer_3">
+   <item row="8" column="0">
+    <widget class="QPushButton" name="Back_pushButton">
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QPushButton" name="Drinks_img_pushButton">
+       <property name="text">
+        <string>IMAGE</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>Drinks</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="4" column="8">
+    <widget class="QLabel" name="Drinks_quantity_label">
+     <property name="text">
+      <string>      ---</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="food_pic">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="4" rowspan="3">
+    <spacer name="verticalSpacer_4">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
      </property>
@@ -233,24 +264,6 @@
      </property>
     </spacer>
    </item>
-   <item row="2" column="0">
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QPushButton" name="Burger_img_pushButton">
-       <property name="text">
-        <string>IMAGE</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_5">
-       <property name="text">
-        <string>Burger</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </item>
    <item row="3" column="9">
     <widget class="QPushButton" name="Fries_quantity_pos_pushButton">
      <property name="text">
@@ -258,17 +271,27 @@
      </property>
     </widget>
    </item>
-   <item row="2" column="8">
-    <widget class="QLabel" name="Burger_quantity_label">
+   <item row="4" column="6" colspan="2">
+    <widget class="QPushButton" name="Drinks_quantity_neg_pushButton">
      <property name="text">
-      <string>      ---</string>
+      <string>-</string>
      </property>
     </widget>
    </item>
-   <item row="5" column="0">
-    <widget class="QLabel" name="food_pic">
+   <item row="7" column="7">
+    <widget class="QLabel" name="total_label_1">
      <property name="text">
-      <string/>
+      <string>---</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="5">
+    <widget class="QPlainTextEdit" name="order_show">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
      </property>
     </widget>
    </item>

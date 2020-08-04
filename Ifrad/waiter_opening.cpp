@@ -49,6 +49,8 @@ void waiter_opening::on_Waiter_login_pushbutton_clicked()
     }
     else
     {
+        temp=5;
+        position=i;
         hide();
         dis=new display_common(this);
         dis->resize(800,500);

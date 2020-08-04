@@ -36,9 +36,10 @@ void Customer::on_Menu_PushButton_clicked()
         int i,flag=0;
         for(i=0;i<total_customer;i++)
         {
-            if(customer[i]->getName()==ui->Cus_nameline->text())
+            if(customer[i]->getPhone_number()==ui->Cus_phoneline->text())
             {
                 current_customer=i;
+                temp1=1;
                 flag=1;
             }
         }
