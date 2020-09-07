@@ -18,10 +18,11 @@ menu_customer::menu_customer(QWidget *parent) :
         v=ppl->display();
         ui->order_show->insertPlainText("\n");
         ui->order_show->appendPlainText(v["last_order"]);
+        temp1=0;
     }
     else
     {
-        ui->order_show->insertPlainText("---");
+        ui->order_show->insertPlainText("\n\n\t---");
     }
 }
 

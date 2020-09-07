@@ -50,12 +50,11 @@ void chef_opening::on_Chef_singIn_pushButton_clicked()
     }
     else
     {
+        hide();
         temp=4;
         position=i;
-        hide();
-        dis=new display_common(this);
-        dis->resize(800,500);
-        dis->show();
+        ord=new order_display(this);
+        ord->resize(800,500);
+        ord->show();
     }
-
 }

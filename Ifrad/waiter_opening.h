@@ -2,6 +2,7 @@
 #define WAITER_OPENING_H
 
 #include "display_common.h"
+#include "order_display.h"
 
 #include <QDialog>
 
@@ -25,6 +26,7 @@ private slots:
 private:
     Ui::waiter_opening *ui;
     display_common *dis;
+    order_display *ord;
 };
 
 #endif // WAITER_OPENING_H

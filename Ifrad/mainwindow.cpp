@@ -1,11 +1,45 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+#include "global.h"
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+
+
+    //Chef Preset
+
+    chef[0]=new Chef_info();
+    chef[0]->setID(1111);
+    chef[0]->setPassword("abcd1");
+    chef[0]->setName("Harry");
+    chef[0]->setSalary(30000);
+
+    chef[1]=new Chef_info();
+    chef[1]->setID(2222);
+    chef[1]->setPassword("abcd2");
+    chef[1]->setName("Potter");
+    chef[1]->setSalary(29000);
+
+    //Waiter Preset
+
+    waiter[0]=new Waiter_info();
+    waiter[0]->setID(3333);
+    waiter[0]->setPassword("abcd3");
+    waiter[0]->setName("Stark");
+    waiter[0]->setSalary(15000);
+    waiter[0]->setTable_number(1);
+
+    waiter[1]=new Waiter_info();
+    waiter[1]->setID(4444);
+    waiter[1]->setPassword("abcd4");
+    waiter[1]->setName("Bruce");
+    waiter[1]->setSalary(14000);
+    waiter[1]->setTable_number(2);
 }
 
 MainWindow::~MainWindow()

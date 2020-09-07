@@ -3,8 +3,8 @@
 #include "chef_info.h"
 #include "waiter_info.h"
 #include "customer_info.h"
-#define MAX_CHEF 10
-#define MAX_WAITER 10
+#define MAX_CHEF 100
+#define MAX_WAITER 100
 #define MAX_CUSTOMER 100
 
 class Global

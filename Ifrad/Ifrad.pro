@@ -33,6 +33,8 @@ SOURCES += \
     menu.cpp \
     menu_customer.cpp \
     menu_last.cpp \
+    order.cpp \
+    order_display.cpp \
     people.cpp \
     waiter_info.cpp \
     waiter_opening.cpp
@@ -54,6 +56,8 @@ HEADERS += \
     menu.h \
     menu_customer.h \
     menu_last.h \
+    order.h \
+    order_display.h \
     people.h \
     waiter_info.h \
     waiter_opening.h
@@ -70,6 +74,7 @@ FORMS += \
     manager_second.ui \
     menu_customer.ui \
     menu_last.ui \
+    order_display.ui \
     waiter_opening.ui
 
 # Default rules for deployment.
