@@ -37,12 +37,19 @@ menu_last::~menu_last()
 MainWindow *m7;
 void menu_last::on_pushButton_clicked()   //confirm push_button
 {
+    /*
+    --------------------Older Version-------------------
     QHash<QString,int> q;
-    q["burgers"]=quantity_burger;
-    q["fries"]=quantity_fries;
-    q["drinks"]=quantity_drinks;
+    q["Burger"]=quantity_burger;
+    q["French-fry"]=quantity_fries;
+    q["Drinks"]=quantity_drinks;
     customer[current_customer]->update_last_order(q);
+    */
+
     customer[current_customer]->new_purchase(total_cost);
+    order[total_order]=new Order(quantity_burger,quantity_fries,quantity_drinks,table_number);
+    customer[current_customer]->set_customer_order(total_order);
+    total_order++;
     daily_cost=daily_cost+total_cost;
     quantity_burger=0, quantity_fries=0, quantity_drinks=0, total_cost=0;
     hide();

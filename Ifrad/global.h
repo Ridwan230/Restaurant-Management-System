@@ -3,9 +3,12 @@
 #include "chef_info.h"
 #include "waiter_info.h"
 #include "customer_info.h"
+#include "order.h"
+
 #define MAX_CHEF 100
 #define MAX_WAITER 100
 #define MAX_CUSTOMER 100
+#define MAX_ORDER 100
 
 class Global
 {
@@ -25,9 +28,12 @@ extern int total_menu_item;
 extern Chef_info* chef[MAX_CHEF];
 extern Waiter_info* waiter[MAX_WAITER];
 extern Customer_info* customer[MAX_CUSTOMER];
+extern Order* order[MAX_ORDER];
 extern int daily_cost;    //Daily cost record kore
-extern QHash<QString,int> current_order; //Last order of a particular customer record kore
+//extern QHash<QString,int> current_order; //Last order of a particular customer record kore
 extern int current_customer; //Customer jodi age eshe thake tahole eita diye pointer acces kora hobe
+extern int total_order;
+extern int table_number;
 
 
 

@@ -10,6 +10,11 @@ Customer::Customer(QWidget *parent) :
     ui(new Ui::Customer)
 {
     ui->setupUi(this);
+    for(int i=1;i<5;i++)
+    {
+        ui->comboBox->addItem(QString::number(i));
+    }
+    ui->comboBox->setCurrentIndex(-1);
 }
 
 Customer::~Customer()
@@ -56,6 +61,7 @@ void Customer::on_Menu_PushButton_clicked()
             ui->lineEdit_3->clear();
             ui->Cus_phoneline->clear();
         }
+        table_number=ui->comboBox->currentText().toInt();
 
 
      //OPERATIONS FOR CUSTOMER_MENU CLASS    (Ifrad add korse)

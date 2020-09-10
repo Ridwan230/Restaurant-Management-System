@@ -10,6 +10,9 @@ private:
     QString phone_number;
     QString Email;
     int total_purchase;
+
+    int customer_order;
+
     QHash<QString,int> last_order;
 public:
     Customer_info();
@@ -24,6 +27,9 @@ public:
     void new_purchase(int n);     //Keeps tract of total purchase by the customer
     void update_last_order(QHash<QString,int> latest_order);     //keeps tract of the latest order of the customer so that can be used
                                                                 //when he visits the restaurant again.
+    void set_customer_order(int r);
+    int get_customer_order();
+
 };
 
 #endif // CUSTOMER_INFO_H

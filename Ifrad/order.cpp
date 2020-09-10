@@ -1,47 +1,47 @@
 #include "order.h"
 
-order::order()
+Order::Order(int b, int f, int d, int t) : burger(b),fries(f),drinks(d),table_no(t)
 {
 
 }
-void order::set_burger(int a)
+void Order::set_burger(int a)
 {
     burger=a;
 }
-void order::set_fries(int a)
+void Order::set_fries(int a)
 {
     fries=a;
 }
-void order::set_drinks(int a)
+void Order::set_drinks(int a)
 {
     drinks=a;
 }
-void order::set_table_no(int a)
+void Order::set_table_no(int a)
 {
     table_no=a;
 }
-void order::set_order_no(int a)
+void Order::set_order_no(int a)
 {
     order_id=a;
 }
 
-int order::set_burger()
+int Order::get_burger()
 {
     return burger;
 }
-int order::set_fries()
+int Order::get_fries()
 {
     return fries;
 }
-int order::set_drinks()
+int Order::get_drinks()
 {
     return drinks;
 }
-int order::set_table_no()
+int Order::get_table_no()
 {
     return table_no;
 }
-int order::set_order_no()
+int Order::get_order_no()
 {
     return order_id;
 }
