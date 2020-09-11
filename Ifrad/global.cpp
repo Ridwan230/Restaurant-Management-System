@@ -34,3 +34,5 @@ int total_burger=0;
 int total_fries=0;
 int total_drinks=0;
 int temp1=0;
+bool table_res[7]={false};
+int customer_tableno;

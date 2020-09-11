@@ -127,6 +127,7 @@ void menu_customer::on_Drinks_img_pushButton_clicked()
 
 void menu_customer::on_Confirm_pushButton_clicked()
 {
+    table_res[customer_tableno]=true;
     total_burger=total_burger+quantity_burger;
     total_fries=total_fries+quantity_fries;
     total_drinks=total_drinks+quantity_drinks;

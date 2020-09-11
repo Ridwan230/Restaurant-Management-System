@@ -69,3 +69,11 @@ void manager_second::on_Manager_finances_clicked()
     dis->resize(800,500);
     dis->show();
 }
+
+void manager_second::on_Manager_reservation_clicked()
+{
+    hide();
+    tab=new table_reserve(this);
+    tab->resize(800,500);
+    tab->show();
+}

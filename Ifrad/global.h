@@ -48,6 +48,7 @@ extern int total_burger;
 extern int total_fries;
 extern int total_drinks;
 extern int temp1;
-
+extern bool table_res[7];
+extern int customer_tableno;
 
 #endif // GLOBAL_H

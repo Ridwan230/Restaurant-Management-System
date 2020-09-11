@@ -4,6 +4,7 @@
 #include "man_employee.h"
 #include "menu_customer.h"
 #include "display_common.h"
+#include "table_reserve.h"
 #include <QDialog>
 
 namespace Ui {
@@ -34,11 +35,14 @@ private slots:
 
     void on_Manager_finances_clicked();
 
+    void on_Manager_reservation_clicked();
+
 private:
     Ui::manager_second *ui;
     Man_Employee *manemployee;
     menu_customer *cus_menu;
     display_common *dis;
+    table_reserve *tab;
 };
 
 #endif // MANAGER_SECOND_H

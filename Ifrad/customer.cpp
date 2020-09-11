@@ -10,9 +10,12 @@ Customer::Customer(QWidget *parent) :
     ui(new Ui::Customer)
 {
     ui->setupUi(this);
-    for(int i=1;i<5;i++)
+    for(int i=1;i<7;i++)
     {
-        ui->comboBox->addItem(QString::number(i));
+        if(table_res[i]==false)
+        {
+            ui->comboBox->addItem(QString::number(i));
+        }
     }
     ui->comboBox->setCurrentIndex(-1);
 }
@@ -65,6 +68,8 @@ void Customer::on_Menu_PushButton_clicked()
 
 
      //OPERATIONS FOR CUSTOMER_MENU CLASS    (Ifrad add korse)
+        customer_tableno=ui->comboBox->currentText().toInt();
+
         hide();
         cus_menu= new menu_customer(this);
         cus_menu->resize(800,500);
