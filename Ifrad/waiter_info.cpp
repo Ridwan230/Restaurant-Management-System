@@ -39,7 +39,7 @@ QHash<QString,QString> Waiter_info::display()
     v["salary"]=QString::number(salary);
     if(current_order!=NULL)
     {
-        v["table_number"]="Table Number - "+QString::number(current_order->get_table_no());
+        v["current_order"]="Table Number - "+QString::number(current_order->get_table_no()) + "\n";
         if(current_order->get_burger()>0)
         {
             v["current_order"]=v["current_order"]+"\nBurger ("+QString::number(current_order->get_burger())+")";
