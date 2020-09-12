@@ -19,6 +19,8 @@ private slots:
 
     void on_back_pushButton_clicked();
 
+    void on_order_complete_pushButton_clicked();
+
 private:
     Ui::order_display *ui;
 };

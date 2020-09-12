@@ -20,6 +20,9 @@ int daily_cost=0;
 //QHash<QString,int> current_order;
 int current_customer;
 int table_number=0;
+QQueue<Order*> chef_queue;
+QQueue<Order*> waiter_queue;
+
 
 
 

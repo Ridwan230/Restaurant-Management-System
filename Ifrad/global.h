@@ -4,6 +4,7 @@
 #include "waiter_info.h"
 #include "customer_info.h"
 #include "order.h"
+#include <QQueue>
 
 #define MAX_CHEF 100
 #define MAX_WAITER 100
@@ -34,6 +35,8 @@ extern int daily_cost;    //Daily cost record kore
 extern int current_customer; //Customer jodi age eshe thake tahole eita diye pointer acces kora hobe
 extern int total_order;
 extern int table_number;
+extern QQueue<Order*> chef_queue;
+extern QQueue<Order*> waiter_queue;
 
 
 
