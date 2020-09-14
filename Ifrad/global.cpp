@@ -18,6 +18,7 @@ Customer_info* customer[MAX_CUSTOMER];
 Order* order[MAX_ORDER];
 int daily_cost=0;
 //QHash<QString,int> current_order;
+int Order::total_order=0;
 int current_customer;
 int table_number=0;
 QQueue<Order*> chef_queue;

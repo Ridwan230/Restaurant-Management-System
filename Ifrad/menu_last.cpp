@@ -47,10 +47,10 @@ void menu_last::on_pushButton_clicked()   //confirm push_button
     */
 
     customer[current_customer]->new_purchase(total_cost);
-    order[total_order]=new Order(quantity_burger,quantity_fries,quantity_drinks,table_number);
-    customer[current_customer]->set_customer_order(total_order);
-    chef_queue.enqueue(order[total_order]);
-    total_order++;
+    order[Order::total_order]=new Order(quantity_burger,quantity_fries,quantity_drinks,table_number);
+    customer[current_customer]->set_customer_order(Order::total_order);
+    chef_queue.enqueue(order[Order::total_order]);
+    Order::total_order++;
     daily_cost=daily_cost+total_cost;
     quantity_burger=0, quantity_fries=0, quantity_drinks=0, total_cost=0;
     hide();

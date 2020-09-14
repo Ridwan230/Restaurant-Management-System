@@ -33,7 +33,6 @@ extern Order* order[MAX_ORDER];
 extern int daily_cost;    //Daily cost record kore
 //extern QHash<QString,int> current_order; //Last order of a particular customer record kore
 extern int current_customer; //Customer jodi age eshe thake tahole eita diye pointer acces kora hobe
-extern int total_order;
 extern int table_number;
 extern QQueue<Order*> chef_queue;
 extern QQueue<Order*> waiter_queue;

@@ -17,6 +17,7 @@ public:
     int get_table_no();
     int get_order_no();
     friend class Customer_info;
+    static int total_order;
 
 
 private:
